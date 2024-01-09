@@ -1,0 +1,27 @@
+@media (max-width: 600px) {
+  table thead tr {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+  }
+  table th,
+  table td {
+    padding: 0.5em;
+  }
+  table td {
+    text-align: right;
+    display: block;
+    font-size: 1em;
+  }
+  table td:before {
+    content: attr(data-title) ": ";
+    float: left;
+  }
+}
+
+.table-color th {
+  background-color: #004e74;
+  color: white;
+}
